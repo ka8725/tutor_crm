@@ -1,0 +1,6 @@
+s3_bucket: tutor-office
+s3_access_key_id: <%= ENV['S3_TUTOR_KEY'] %>
+s3_secret_access_key: <%= ENV['S3_TUTOR_SECRET'] %>
+s3_upload_files:
+  -  public/assets/**/*
+

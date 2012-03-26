@@ -22,6 +22,7 @@ end
 
 group :development do
   gem 'heroku'
+  gem 'jammit-s3'
 end
 
 gem 'jquery-rails'
