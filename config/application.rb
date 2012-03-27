@@ -64,7 +64,9 @@ module TutorCrm
     config.generators do |g|
       g.assets = false
       g.helper = false
-      g.test_framework :rspec, :fixture => true, :views => false
+      g.test_framework :rspec, :fixture => true
+      g.view_specs false
+      g.helper_specs false
       g.fixture_replacement :factory_girl, :dir => 'spec/factories'
     end
   end
