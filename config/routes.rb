@@ -1,4 +1,8 @@
 TutorCrm::Application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
+  devise_for :users
+
   resources :projects
   root :to => 'projects#index'
   # The priority is based upon order of creation:
