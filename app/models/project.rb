@@ -15,8 +15,8 @@ class Project < ActiveRecord::Base
   has_many :project_schools, :dependent => :destroy
   has_many :schools, :through => :project_schools
 
-  has_many :project_subjects, :dependent => :destroy
-  has_many :schools, :through => :project_subjects
+  has_many :project_schools, :dependent => :destroy
+  has_many :schools, :through => :project_schools
 
   validates :name, :url, :presence => true, :uniqueness => true
   validates :city, :country, :project_type, :presence => true
