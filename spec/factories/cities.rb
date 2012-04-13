@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :city do
-    name "MyString"
-    country_id 1
+    name    { Faker::Address.city }
+    country
   end
 end

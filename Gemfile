@@ -20,6 +20,7 @@ group :assets do
 end
 
 group :development do
+  gem 'guard-rspec'
   gem 'heroku'
   gem 'jammit-s3'
 end
@@ -27,6 +28,7 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem "shoulda-matchers"
   gem 'faker'
   gem 'mocha'
   gem 'cucumber-rails', :require => false
