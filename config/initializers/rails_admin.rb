@@ -95,6 +95,10 @@ RailsAdmin.config do |config|
   #   update do; end
   # end
 
+  config.model Project do
+    weight -1
+  end
+
   config.model Office do
     edit do
       configure :projects do
