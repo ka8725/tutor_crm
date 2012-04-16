@@ -9,6 +9,7 @@ describe Project do
     it { should have_many(:lines).through(:project_lines) }
     it { should have_many(:offices).through(:project_offices) }
     it { should have_many(:schools).through(:project_schools) }
+    it { should have_many(:subjects).through(:project_subjects) }
   end
 
   context :validations do
