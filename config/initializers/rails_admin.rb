@@ -31,7 +31,7 @@ RailsAdmin.config do |config|
 
   #  ==> Included models
   # Add all excluded models here:
-  # config.excluded_models = [Project]
+  config.excluded_models = [ProjectLine, ProjectOffice, ProjectSchool, ProjectSubject, ProjectSubway]
 
   # Add models here if you want to go 'whitelist mode':
   # config.included_models = [Project]
@@ -82,10 +82,10 @@ RailsAdmin.config do |config|
   # config.model Project do
   #   # Found associations:
   #   # Found columns:
-  #     configure :id, :integer 
-  #     configure :name, :string 
-  #     configure :url, :string 
-  #     configure :created_at, :datetime 
+  #     configure :id, :integer
+  #     configure :name, :string
+  #     configure :url, :string
+  #     configure :created_at, :datetime
   #     configure :updated_at, :datetime   #   # Sections:
   #   list do; end
   #   export do; end
