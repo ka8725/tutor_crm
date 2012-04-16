@@ -94,4 +94,12 @@ RailsAdmin.config do |config|
   #   create do; end
   #   update do; end
   # end
+
+  config.model Office do
+    edit do
+      configure :projects do
+        hide
+      end
+    end
+  end
 end

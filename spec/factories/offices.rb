@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :office do
-    address "MyString"
-    subway_id 1
-    line_id 1
+    address { Faker::Address.address }
+    subway
+    line
   end
 end
