@@ -5,7 +5,7 @@ RailsAdmin.config do |config|
 
   # If your default_local is different from :en, uncomment the following 2 lines and set your default locale here:
   # require 'i18n'
-  # I18n.default_locale = :de
+  # I18n.default_locale = :ru
 
   config.current_user_method { current_user } # auto-generated
 
@@ -94,6 +94,17 @@ RailsAdmin.config do |config|
   #   create do; end
   #   update do; end
   # end
+
+  config.model Subject do
+    edit do
+      configure :slug do
+        read_only true
+      end
+      configure :projects do
+        hide
+      end
+    end
+  end
 
   config.model Project do
     weight -1
