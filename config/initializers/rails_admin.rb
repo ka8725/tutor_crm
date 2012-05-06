@@ -95,6 +95,22 @@ RailsAdmin.config do |config|
   #   update do; end
   # end
 
+  config.model Line do
+    edit do
+      configure :city_lines do
+        hide
+      end
+    end
+  end
+
+  config.model City do
+    edit do
+      configure :city_lines do
+        hide
+      end
+    end
+  end
+
   config.model Subject do
     edit do
       configure :slug do
