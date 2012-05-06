@@ -14,3 +14,6 @@ User.create!(:email => 'admin@example.com', :password => 'password', :password_c
 ProjectType.create!(:name => 'Мини-группы')
 ProjectType.create!(:name => 'Индивидуальное обучение')
 
+SubjectCategory.create!(:name => 'Школьная программа')
+SubjectCategory.create!(:name => 'Иностранные языки')
+SubjectCategory.create!(:name => 'Академические программы на английском языке')

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120506110828) do
+ActiveRecord::Schema.define(:version => 20120506113509) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -111,12 +111,23 @@ ActiveRecord::Schema.define(:version => 20120506110828) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "subject_categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "subjects", :force => true do |t|
     t.string   "name"
     t.boolean  "show_on_the_site"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
     t.string   "slug"
+    t.integer  "subject_category_id"
+    t.string   "title"
+    t.text     "seo_text"
+    t.text     "keywords"
+    t.text     "description"
   end
 
   create_table "subways", :force => true do |t|
