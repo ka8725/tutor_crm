@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :school do
-    name "MyString"
+    name { Faker::Company.name }
     show_on_the_site false
   end
 end

@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :project_line do
-    project_id 1
-    line_id 1
+    project
+    line
   end
 end

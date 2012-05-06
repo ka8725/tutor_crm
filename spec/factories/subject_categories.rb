@@ -2,6 +2,6 @@
 
 FactoryGirl.define do
   factory :subject_category do
-    name "MyString"
+    name { Faker::Name.name }
   end
 end

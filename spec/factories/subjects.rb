@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :subject do
-    name "MyString"
+    name { Faker::Name.name }
     show_on_the_site false
   end
 end

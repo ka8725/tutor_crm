@@ -11,11 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120506113509) do
+ActiveRecord::Schema.define(:version => 20120506114630) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
     t.integer  "country_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "city_lines", :force => true do |t|
+    t.integer  "city_id"
+    t.integer  "line_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
