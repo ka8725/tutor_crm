@@ -1,13 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails', '3.2.6'
 gem 'friendly_id'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'rails_admin'
+gem 'yandex_inflect', :git => 'git://github.com/ka8725/yandex_inflect.git'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
