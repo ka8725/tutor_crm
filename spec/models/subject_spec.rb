@@ -15,7 +15,7 @@ describe Subject do
   end
 
   context :yandex_inflection do
-    it { subject.genitive_name.should == 'математике' }
+    it { subject.ablative_name.should == 'математике' }
   end
 
   context :slug do

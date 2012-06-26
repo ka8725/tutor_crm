@@ -8,8 +8,8 @@ class Subject < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, :use => :slugged
 
-  def genitive_name
-    @genitive_name ||= YandexInflect.inflections(name)[2]
+  def ablative_name
+    @ablative_name ||= YandexInflect.inflections(name)[2]
   end
 
   def normalize_friendly_id(text)
