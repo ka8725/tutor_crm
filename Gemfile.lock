@@ -41,6 +41,7 @@ GEM
       multi_json (~> 1.0)
     addressable (2.2.8)
     arel (3.0.2)
+    babosa (0.3.7)
     bbenezech-nested_form (0.0.6)
     bcrypt-ruby (3.0.1)
     bootstrap-sass (2.0.3.1)
@@ -257,6 +258,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  babosa
   coffee-rails (~> 3.2.1)
   cucumber-rails
   database_cleaner

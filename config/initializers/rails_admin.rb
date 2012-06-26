@@ -113,9 +113,6 @@ RailsAdmin.config do |config|
 
   config.model Subject do
     edit do
-      configure :slug do
-        read_only true
-      end
       configure :projects do
         hide
       end

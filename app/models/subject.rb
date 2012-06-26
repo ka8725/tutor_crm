@@ -11,4 +11,8 @@ class Subject < ActiveRecord::Base
   def genitive_name
     @genitive_name ||= YandexInflect.inflections(name)[2]
   end
+
+  def normalize_friendly_id(text)
+    text.to_slug.normalize!(:transliterations => :russian) if text.present?
+  end
 end

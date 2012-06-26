@@ -9,6 +9,7 @@ gem 'friendly_id'
 gem 'mysql2'
 gem 'rails_admin'
 gem 'yandex_inflect', :git => 'git://github.com/ka8725/yandex_inflect.git'
+gem 'babosa' # for transliterations
 
 # Gems used only for assets and not required
 # in production environments by default.
