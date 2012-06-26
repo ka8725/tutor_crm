@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'spec_helper'
 
 describe Subject do
@@ -9,5 +10,11 @@ describe Subject do
 
   context :validations do
     it { should validate_presence_of(:name) }
+  end
+
+  context :yandex_inflection do
+    let(:subject) { FactoryGirl.create(:subject, :name => 'математика') }
+
+    it { subject.genitive_name.should == 'математике' }
   end
 end

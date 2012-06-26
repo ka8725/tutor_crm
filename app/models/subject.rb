@@ -7,4 +7,8 @@ class Subject < ActiveRecord::Base
 
   extend FriendlyId
   friendly_id :name, :use => :slugged
+
+  def genitive_name
+    @genitive_name ||= YandexInflect.inflections(name)[2]
+  end
 end
